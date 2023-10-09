@@ -1,4 +1,8 @@
-# Astro Starter Kit: Basics
+# Tsuyoshi Dev
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/22ae1a06-3930-4a8d-af22-f8e5969bd4d3/deploy-status)](https://app.netlify.com/sites/vigilant-ardinghelli-a333bc/deploys)
+
+Web Site: <https://tsuyoshi.dev>
 
 ```sh
 npm create astro@latest -- --template basics
