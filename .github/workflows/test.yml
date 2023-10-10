@@ -5,24 +5,14 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  push:
+  pull_request:
     branches:
       - main
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - ready_for_review
 
 jobs:
   test:
     name: Test & Build
-    defaults:
-      run:
-        working-directory: .
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -34,7 +24,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: 20
           cache: 'pnpm'
           cache-dependency-path: pnpm-lock.yaml
 
@@ -44,7 +34,7 @@ jobs:
       - name: Lint
         run: pnpm lint
 
-      - name: StyleLint
+      - name: Lint style
         run: pnpm lint-css
 
       - name: Build
