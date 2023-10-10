@@ -24,21 +24,30 @@
 	}
 
 	.fluid {
-		--base-min-font-size: 1.5rem;
+		--base-min-font-size: 3.8rem;
 		--base-max-font-size: 8rem;
 		--base-font-size: 7.5cqi;
 		--font-size-ratio: 1;
-
-		font-size: clamp(
+		--fluid-size: clamp(
 			calc(var(--base-min-font-size) * var(--font-size-ratio)),
 			calc(var(--base-font-size) * var(--font-size-ratio)),
 			calc(var(--base-max-font-size) * var(--font-size-ratio))
 		);
+
+		font-size: var(--fluid-size);
 	}
 
 	h1 {
 		font-weight: var(--font-weight-9);
 		text-align: center;
+		line-height: 120%;
+		margin-block: var(--fluid-size);
+
+		@media (width <= 768px) {
+			display: flex;
+			flex-direction: column;
+			gap: 0.2rem;
+		}
 	}
 
 	.im {
@@ -46,11 +55,10 @@
 	}
 
 	.name {
-		white-space: nowrap;
 		--font-size-ratio: 1;
 
 		background: var(--gradient-12);
-		background-size: var(--size-relative-14) var(--size-relative-8);
+		background-size: var(--size-relative-16) var(--size-relative-8);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
