@@ -1,0 +1,87 @@
+---
+
+---
+
+<div class="container">
+	<div class="greet fluid fade-out">Hello,</div>
+	<h1 class="fluid"
+		><span class="im fluid fade-out">I'm</span>
+		<span class="name fluid"> Tsuyoshi Yamaguchi</span></h1
+	>
+	<div class="role fluid fade-out">WEB DEVELOPER</div>
+</div>
+<div class="container"> </div>
+
+<style>
+	.container {
+		container-type: inline-size;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		inline-size: 100vw;
+		block-size: 100lvh;
+	}
+
+	.fluid {
+		--base-min-font-size: 1.5rem;
+		--base-max-font-size: 8rem;
+		--base-font-size: 7.5cqi;
+		--font-size-ratio: 1;
+
+		font-size: clamp(
+			calc(var(--base-min-font-size) * var(--font-size-ratio)),
+			calc(var(--base-font-size) * var(--font-size-ratio)),
+			calc(var(--base-max-font-size) * var(--font-size-ratio))
+		);
+	}
+
+	h1 {
+		font-weight: var(--font-weight-9);
+		text-align: center;
+	}
+
+	.im {
+		--font-size-ratio: 0.8;
+	}
+
+	.name {
+		white-space: nowrap;
+		--font-size-ratio: 1;
+
+		background: var(--gradient-12);
+		background-size: var(--size-relative-14) var(--size-relative-8);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.greet {
+		font-weight: var(--font-weight-7);
+		--font-size-ratio: 0.5;
+	}
+
+	.role {
+		font-weight: var(--font-weight-7);
+		--font-size-ratio: 0.7;
+	}
+
+	@keyframes fade-out {
+		0% {
+			opacity: 1;
+		}
+		60% {
+			opacity: 1;
+		}
+		90% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	.fade-out {
+		animation: fade-out linear;
+		animation-timeline: view();
+	}
+</style>
