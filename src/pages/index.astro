@@ -4,65 +4,67 @@ import Layout from '../layouts/Layout.astro'
 
 <Layout title="Tsuyoshi Yamaguchi">
 	<main>
-		<h1>Tsuyoshi Yamaguchi</h1>
+		<div class="container">
+			<div class="greet fluid">Hello,</div>
+			<h1 class="fluid"
+				><span class="im fluid">I'm</span> <span class="name fluid"> Tsuyoshi Yamaguchi</span></h1
+			>
+			<div class="role fluid">WEB DEVELOPER</div>
+		</div>
+		<div class="container"> </div>
 	</main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
+	.container {
+		container-type: inline-size;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		inline-size: 100vw;
+		block-size: 100lvh;
 	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
+
+	.fluid {
+		--base-min-font-size: 1.5rem;
+		--base-max-font-size: 8rem;
+		--base-font-size: 7.5cqi;
+		--font-size-ratio: 1;
+
+		font-size: clamp(
+			calc(var(--base-min-font-size) * var(--font-size-ratio)),
+			calc(var(--base-font-size) * var(--font-size-ratio)),
+			calc(var(--base-max-font-size) * var(--font-size-ratio))
+		);
 	}
+
 	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
+		font-weight: var(--font-weight-9);
 		text-align: center;
-		margin-bottom: 1em;
 	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
+
+	.im {
+		--font-size-ratio: 0.8;
+	}
+
+	.name {
+		white-space: nowrap;
+		--font-size-ratio: 1;
+
+		background: var(--gradient-12);
+		background-size: var(--size-relative-14) var(--size-relative-8);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
 	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
+
+	.greet {
+		--font-size-ratio: 0.5;
+		font-weight: var(--font-weight-7);
 	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+
+	.role {
+		--font-size-ratio: 0.7;
+		font-weight: var(--font-weight-7);
 	}
 </style>
