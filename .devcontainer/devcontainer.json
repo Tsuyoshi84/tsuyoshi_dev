@@ -8,6 +8,7 @@
 			"extensions": [
 				"astro-build.astro-vscode",
 				"esbenp.prettier-vscode",
+				"formulahendry.auto-rename-tag",
 				"dbaeumer.vscode-eslint",
 				"streetsidesoftware.code-spell-checker"
 			]
