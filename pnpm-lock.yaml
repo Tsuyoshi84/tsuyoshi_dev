@@ -9,8 +9,8 @@ dependencies:
     specifier: ^3.3.3
     version: 3.3.3(typescript@5.2.2)
   open-props:
-    specifier: ^1.6.5
-    version: 1.6.5
+    specifier: ^1.6.8
+    version: 1.6.8
 
 devDependencies:
   '@typescript-eslint/parser':
@@ -3972,8 +3972,8 @@ packages:
     dependencies:
       mimic-fn: 4.0.0
 
-  /open-props@1.6.5:
-    resolution: {integrity: sha512-l1oyu9uRQb319RGsCWZc8MWqPWfvwFCrueZreGEG3Y04og3mzyd1q4WKrdMnCx+PYiD63QOl/rge/6PK00wK6g==}
+  /open-props@1.6.8:
+    resolution: {integrity: sha512-pC/xUO5xyou8yTRQ7G8gx7ut0ieSmabtzjeWCQX+u0RhnRCWXYzW80TNnH8VQvI/WqMLKrFQOlYc3fIgh+lg5w==}
     dev: false
 
   /open@9.1.0:

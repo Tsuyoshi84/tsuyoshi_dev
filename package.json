@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "astro": "^3.3.3",
-    "open-props": "^1.6.5"
+    "open-props": "^1.6.8"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^6.8.0",
