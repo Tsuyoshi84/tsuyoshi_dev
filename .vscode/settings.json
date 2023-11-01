@@ -2,12 +2,12 @@
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-
 	"cSpell.words": ["astro", "stylelint"],
-
+	"css.validate": false,
 	"editor.codeActionsOnSave": { "source.fixAll": true },
 	"editor.formatOnSave": true,
 	"editor.quickSuggestions": { "strings": "on" },
-
+	"less.validate": false,
+	"scss.validate": false,
 	"stylelint.validate": ["html", "vue", "svelte", "astro"]
 }
