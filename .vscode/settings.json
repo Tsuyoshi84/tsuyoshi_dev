@@ -1,3 +1,13 @@
 {
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	"cSpell.words": ["astro", "stylelint"],
+
+	"editor.codeActionsOnSave": { "source.fixAll": true },
+	"editor.formatOnSave": true,
+	"editor.quickSuggestions": { "strings": "on" },
+
 	"stylelint.validate": ["html", "vue", "svelte", "astro"]
 }
