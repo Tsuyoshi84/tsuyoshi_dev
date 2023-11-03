@@ -13,7 +13,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint --ext .js,.ts,.astro src",
-    "lint-css": "stylelint \"**/*.css\" --ignore-path .gitignore",
+    "lint-css": "stylelint \"**/*.{css,astro}\" --ignore-path .gitignore",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -29,6 +29,7 @@
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.1",
     "stylelint": "^15.11.0",
-    "stylelint-config-html": "^1.1.0"
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-pretty-order": "^0.2.0"
   }
 }

@@ -1,4 +1,4 @@
 module.exports = {
-	extends: ['stylelint-config-html'],
+	extends: ['stylelint-config-html', 'stylelint-config-pretty-order'],
 	rules: {},
 }
