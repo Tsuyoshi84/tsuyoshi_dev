@@ -2,11 +2,20 @@
 	"[css]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
+
+	"cSpell.ignorePaths": ["package.json", "pnpm-lock.yaml", ".vscode/**", ".devcontainer/**"],
 	"cSpell.words": ["astro", "stylelint"],
+
 	"css.validate": false,
+
+	"cssvar.files": ["./node_modules/open-props/open-props.min.css"],
+	"cssvar.ignore": [],
+	"cssvar.extensions": ["css", "jsx", "tsx"],
+
 	"editor.codeActionsOnSave": { "source.fixAll": true },
 	"editor.formatOnSave": true,
 	"editor.quickSuggestions": { "strings": "on" },
+
 	"less.validate": false,
 	"scss.validate": false,
 	"stylelint.validate": ["html", "vue", "svelte", "astro"]
