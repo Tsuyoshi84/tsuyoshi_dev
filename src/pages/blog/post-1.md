@@ -20,3 +20,51 @@ tags: ['astro']
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+
+
+### Shell.
+
+```sh
+npm install
+```
+
+### HTML
+
+```html
+<div class="test">
+  <input type="number" />
+</div>
+```
+
+### TypeScript
+
+```ts
+const value = 123;
+
+function output(value: number): void {
+  console.log(value)
+}
+
+if(value > 100) {
+  output(value)
+}
+```
+
+### Vue
+
+```vue
+<script setup lang="ts">
+const name = ref('John')
+</script>
+
+<template>
+  <div>{{ name }}</div>
+</template>
+
+<style scoped>
+.test {
+  color: red;
+  width: 123px;
+}
+</style>
+```

@@ -41,11 +41,22 @@ const pageDescription = description ?? title
 		html {
 			font-family: var(--font-sans);
 			color: var(--gray-0);
-			background: var(--gray-9);
+			background: var(--gray-8);
 		}
 
 		body {
+			padding: var(--size-4);
 			overflow-x: hidden;
+		}
+
+		p {
+			font-size: var(--font-size-2);
+			letter-spacing: 0.0625em;
+			line-height: 1.5;
+
+			@media (768px <= width) {
+				font-size: var(--font-size-3);
+			}
 		}
 
 		code {
@@ -58,6 +69,46 @@ const pageDescription = description ?? title
 				Bitstream Vera Sans Mono,
 				Courier New,
 				monospace;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			letter-spacing: 0.0625em;
+			text-wrap: balance;
+		}
+
+		h1 {
+			font-size: var(--font-size-6);
+			font-weight: var(--font-weight-8);
+			text-align: center;
+
+			@media (768px <= width) {
+				font-size: var(--font-size-fluid-3);
+			}
+		}
+
+		h2 {
+			font-size: var(--font-size-4);
+
+			@media (768px <= width) {
+				font-size: var(--font-size-fluid-2);
+			}
+		}
+
+		h3 {
+			font-size: var(--font-size-3);
+
+			@media (768px <= width) {
+				font-size: var(--font-size-fluid-1);
+			}
+		}
+
+		pre {
+			padding: var(--size-2);
 		}
 	}
 </style>
