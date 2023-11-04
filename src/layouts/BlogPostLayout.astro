@@ -30,3 +30,37 @@ const formattedPubDate = new Date(pubDate).toLocaleDateString('en-US', {
 		<slot />
 	</article>
 </BaseLayout>
+
+<style is:inline>
+	article {
+		max-inline-size: 62rem;
+		margin-inline: auto;
+		margin-block: 0;
+	}
+
+	h1 {
+		margin-block-end: var(--size-4);
+		font-weight: var(--font-weight-9);
+		letter-spacing: var(--size-2);
+		color: var(--green-4);
+	}
+
+	h2 {
+		margin-block: var(--size-4);
+	}
+
+	h3 {
+		margin-block: var(--size-2);
+	}
+
+	time {
+		display: block;
+		font-family: var(--font-mono);
+		text-align: end;
+		color: var(--green-4);
+	}
+
+	li {
+		margin-block: var(--size-2);
+	}
+</style>

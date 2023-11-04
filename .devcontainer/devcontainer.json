@@ -10,6 +10,7 @@
 				"esbenp.prettier-vscode",
 				"formulahendry.auto-rename-tag",
 				"dbaeumer.vscode-eslint",
+				"phoenisx.cssvar",
 				"streetsidesoftware.code-spell-checker",
 				"stylelint.vscode-stylelint"
 			]

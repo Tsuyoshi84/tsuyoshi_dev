@@ -4,6 +4,7 @@
 		"dbaeumer.vscode-eslint",
 		"esbenp.prettier-vscode",
 		"formulahendry.auto-rename-tag",
+		"phoenisx.cssvar",
 		"streetsidesoftware.code-spell-checker",
 		"stylelint.vscode-stylelint"
 	],
