@@ -1,11 +1,11 @@
 ---
+import { NAME } from '../constants'
 import type { Page } from '../schemas'
 import '../styles/global.css'
 
 type Props = Page
 
 const { title, description } = Astro.props
-const NAME = 'Tsuyoshi Yamaguchi'
 const pageTitle = title ? `${title} | ${NAME}` : NAME
 const pageDescription = description ?? pageTitle
 ---

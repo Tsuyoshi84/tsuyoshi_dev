@@ -1,22 +1,19 @@
 ---
-
+import { NAME } from '../constants'
 ---
 
 <div class="container">
 	<div class="greet fluid fade-out">Hello,</div>
 	<h1 class="fluid"
 		><span class="im fluid fade-out">I'm</span>
-		<span class="name fluid"> Tsuyoshi Yamaguchi</span></h1
+		<span class="name fluid"> {NAME}</span></h1
 	>
 	<div class="role fluid fade-out">WEB DEVELOPER</div>
 </div>
-<div class="container"> </div>
 
 <style>
 	.container {
 		display: flex;
-		inline-size: 100vw;
-		block-size: 100lvh;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
@@ -43,7 +40,7 @@
 		line-height: 120%;
 		text-align: center;
 
-		@media (width <= 768px) {
+		@media (width < 768px) {
 			display: flex;
 			flex-direction: column;
 			gap: 0.2rem;
@@ -57,7 +54,6 @@
 	.name {
 		background: var(--gradient-12);
 		-webkit-background-clip: text;
-		background-size: var(--size-relative-16) var(--size-relative-8);
 		-webkit-text-fill-color: transparent;
 		--font-size-ratio: 1;
 	}
