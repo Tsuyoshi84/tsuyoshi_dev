@@ -16,6 +16,8 @@
 	"editor.formatOnSave": true,
 	"editor.quickSuggestions": { "strings": "on" },
 
+	"eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
+
 	"less.validate": false,
 	"scss.validate": false,
 	"stylelint.validate": ["html", "vue", "svelte", "astro"]
