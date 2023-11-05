@@ -1,0 +1,25 @@
+---
+import PageFooter from '../components/PageFooter.astro'
+import PageHeader from '../components/PageHeader.astro'
+import type { Page } from '../schemas'
+import BaseLayout from './BaseLayout.astro'
+
+type Props = Page
+const { title, description } = Astro.props
+---
+
+<BaseLayout title={title} description={description}>
+	<PageHeader />
+	<main>
+		<slot />
+	</main>
+	<PageFooter />
+</BaseLayout>
+
+<style>
+	main {
+		max-inline-size: 62rem;
+		margin-inline: auto;
+		margin-block: 0;
+	}
+</style>

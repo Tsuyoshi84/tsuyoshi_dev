@@ -1,15 +1,13 @@
 ---
+import { NAME } from '../constants'
+import type { Page } from '../schemas'
 import '../styles/global.css'
 
-type Props = {
-	/** Page title */
-	title: string
-	/** Page description */
-	description?: string
-}
+type Props = Page
 
 const { title, description } = Astro.props
-const pageDescription = description ?? title
+const pageTitle = title ? `${title} | ${NAME}` : NAME
+const pageDescription = description ?? pageTitle
 ---
 
 <!doctype html>
@@ -20,7 +18,7 @@ const pageDescription = description ?? title
 		<meta property="og:site_name" content="Tsuyoshi Yamaguchi" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content={`https://tsuyoshi.dev${Astro.url.pathname}`} />
-		<meta property="og:title" content={title} />
+		<meta property="og:title" content={pageTitle} />
 		<meta property="og:description" content={pageDescription} />
 		<meta property="og:image:width" content="1200" />
 		<meta property="og:image:height" content="675" />
@@ -28,7 +26,7 @@ const pageDescription = description ?? title
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
 		<slot />
@@ -37,79 +35,4 @@ const pageDescription = description ?? title
 
 <style is:global>
 	@import 'open-props/style';
-
-	@layer default {
-		html {
-			font-family: var(--font-sans);
-			color: var(--gray-0);
-			background: var(--gray-8);
-		}
-
-		body {
-			padding: var(--size-4);
-			overflow-x: hidden;
-		}
-
-		p {
-			font-size: var(--font-size-2);
-			letter-spacing: 0.0625em;
-			line-height: 1.5;
-
-			@media (768px <= width) {
-				font-size: var(--font-size-3);
-			}
-		}
-
-		code {
-			font-family:
-				Menlo,
-				Monaco,
-				Lucida Console,
-				Liberation Mono,
-				DejaVu Sans Mono,
-				Bitstream Vera Sans Mono,
-				Courier New,
-				monospace;
-		}
-
-		h1,
-		h2,
-		h3,
-		h4,
-		h5,
-		h6 {
-			letter-spacing: 0.0625em;
-			text-wrap: balance;
-		}
-
-		h1 {
-			font-size: var(--font-size-6);
-			font-weight: var(--font-weight-8);
-			text-align: center;
-
-			@media (768px <= width) {
-				font-size: var(--font-size-fluid-3);
-			}
-		}
-
-		h2 {
-			font-size: var(--font-size-4);
-
-			@media (768px <= width) {
-				font-size: var(--font-size-fluid-2);
-			}
-		}
-
-		h3 {
-			font-size: var(--font-size-3);
-
-			@media (768px <= width) {
-				font-size: var(--font-size-fluid-1);
-			}
-		}
-
-		pre {
-			padding: var(--size-2);
-		}
-	}
 </style>

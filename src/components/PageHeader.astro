@@ -1,0 +1,44 @@
+---
+import { NAME } from '../constants'
+---
+
+<header>
+	<a class="name" href="/">{NAME}</a>
+	<nav>
+		<ul>
+			<li class="link-list">
+				<a href="/blog" class="link">Blog</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+<style>
+	header {
+		display: flex;
+		align-items: center;
+	}
+
+	.name {
+		inline-size: max-content;
+		font-size: var(--font-size-4);
+		font-weight: var(--font-weight-8);
+		letter-spacing: 0.1em;
+		background: var(--gradient-12);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@media (width >= 768px) {
+			font-size: var(--font-size-6);
+		}
+	}
+
+	.link-list {
+		list-style: none;
+	}
+
+	.link {
+		font-size: var(--font-size-4);
+		font-weight: var(--font-weight-6);
+	}
+</style>

@@ -12,5 +12,12 @@ export const blogSchema = z.object({
 	/** Tags */
 	tags: blogTagSchema.array(),
 })
-
 export type Blog = z.infer<typeof blogSchema>
+
+export const pageSchema = z.object({
+	/** Page title */
+	title: z.string().optional(),
+	/** Page description */
+	description: z.string().optional(),
+})
+export type Page = z.infer<typeof pageSchema>
