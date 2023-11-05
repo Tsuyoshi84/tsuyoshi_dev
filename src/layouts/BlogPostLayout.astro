@@ -1,32 +1,24 @@
 ---
+import type { CollectionEntry } from 'astro:content'
 import BaseLayout from './BaseLayout.astro'
 
-type Props = {
-	frontmatter: {
-		/** Post title */
-		title: string
-		/** Post description */
-		description: string
-		/** Poblished date */
-		pubDate: string
-	}
-}
+type Props = { frontmatter: CollectionEntry<'blog'>['data'] }
 
 const {
-	frontmatter: { title, description, pubDate },
+	frontmatter: { title, description, publishDate },
 } = Astro.props
 
-const formattedPubDate = new Date(pubDate).toLocaleDateString('en-US', {
+const formattedPubDate = new Date(publishDate).toLocaleDateString('en-US', {
 	year: 'numeric',
 	month: 'long',
 	day: 'numeric',
 })
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description ?? title}>
 	<article>
 		<h1>{title}</h1>
-		<time datetime={pubDate}>{formattedPubDate}</time>
+		<time datetime={publishDate}>{formattedPubDate}</time>
 		<slot />
 	</article>
 </BaseLayout>

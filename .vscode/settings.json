@@ -4,17 +4,19 @@
 	},
 
 	"cSpell.ignorePaths": ["package.json", "pnpm-lock.yaml", ".vscode/**", ".devcontainer/**"],
-	"cSpell.words": ["astro", "stylelint"],
+	"cSpell.words": ["astro", "datetime", "stylelint"],
 
 	"css.validate": false,
 
 	"cssvar.files": ["./node_modules/open-props/open-props.min.css"],
 	"cssvar.ignore": [],
-	"cssvar.extensions": ["css", "jsx", "tsx"],
+	"cssvar.extensions": ["css", "jsx", "tsx", "astro"],
 
 	"editor.codeActionsOnSave": { "source.fixAll": true },
 	"editor.formatOnSave": true,
 	"editor.quickSuggestions": { "strings": "on" },
+
+	"eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
 
 	"less.validate": false,
 	"scss.validate": false,

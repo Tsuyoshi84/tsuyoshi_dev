@@ -1,11 +1,8 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
-title: 'My First Blog Post'
-pubDate: '2023-11-01T12:00:00.000Z'
+slug: this-is-example
+title: 'This is example'
+publishDate: '2023-10-20T12:00:00.000Z'
 description: 'This is the first post of my new Astro blog.'
-image:
-  url: 'https://docs.astro.build/assets/full-logo-light.png'
-  alt: 'The full Astro logo.'
 tags: ['astro']
 ---
 
@@ -21,7 +18,6 @@ tags: ['astro']
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
 
-
 ### Shell.
 
 ```sh
@@ -32,21 +28,21 @@ npm install
 
 ```html
 <div class="test">
-  <input type="number" />
+	<input type="number" />
 </div>
 ```
 
 ### TypeScript
 
 ```ts
-const value = 123;
+const value = 123
 
 function output(value: number): void {
-  console.log(value)
+	console.log(value)
 }
 
-if(value > 100) {
-  output(value)
+if (value > 100) {
+	output(value)
 }
 ```
 
@@ -58,13 +54,13 @@ const name = ref('John')
 </script>
 
 <template>
-  <div>{{ name }}</div>
+	<div>{{ name }}</div>
 </template>
 
 <style scoped>
 .test {
-  color: red;
-  width: 123px;
+	color: red;
+	width: 123px;
 }
 </style>
 ```
