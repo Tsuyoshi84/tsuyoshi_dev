@@ -1,0 +1,21 @@
+---
+import type { Page } from '../schemas'
+import BaseLayout from './BaseLayout.astro'
+
+type Props = Page
+const { title, description } = Astro.props
+---
+
+<BaseLayout title={title} description={description}>
+	<main>
+		<slot />
+	</main>
+</BaseLayout>
+
+<style>
+	main {
+		max-inline-size: 62rem;
+		margin-inline: auto;
+		margin-block: 0;
+	}
+</style>

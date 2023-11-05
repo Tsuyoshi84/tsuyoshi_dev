@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content'
+
+type Props = { post: CollectionEntry<'blog'> }
+
+const { post } = Astro.props
+---
+
+<article>
+	<a href={`/blog/${post.slug}`}>
+		<h2>{post.data.title}</h2>
+		<p>{post.data.description}</p>
+	</a>
+</article>
+
+<style>
+	article {
+		padding: var(--size-4);
+		border-radius: var(--size-2);
+		background-color: var(--gray-7);
+	}
+	h2 {
+		font-size: var(--font-size-5);
+		color: var(--color-secondary);
+
+		@media (768px <= width) {
+			font-size: var(--font-size-6);
+		}
+	}
+</style>

@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content'
-import BaseLayout from './BaseLayout.astro'
+import PageTitle from '../components/PageTitle.astro'
+import BasePageLayout from './BasePageLayout.astro'
 
 type Props = { frontmatter: CollectionEntry<'blog'>['data'] }
 
@@ -15,30 +16,25 @@ const formattedPubDate = new Date(publishDate).toLocaleDateString('en-US', {
 })
 ---
 
-<BaseLayout title={title} description={description ?? title}>
+<BasePageLayout title={title} description={description}>
 	<article>
-		<h1>{title}</h1>
+		<PageTitle title={title} />
 		<time datetime={publishDate}>{formattedPubDate}</time>
 		<slot />
 	</article>
-</BaseLayout>
+</BasePageLayout>
 
 <style is:inline>
-	article {
-		max-inline-size: 62rem;
-		margin-inline: auto;
-		margin-block: 0;
-	}
-
 	h1 {
 		margin-block-end: var(--size-4);
 		font-weight: var(--font-weight-9);
 		letter-spacing: var(--size-2);
-		color: var(--green-4);
+		color: var(--color-primary);
 	}
 
 	h2 {
 		margin-block: var(--size-4);
+		color: var(--color-secondary);
 	}
 
 	h3 {
@@ -48,8 +44,10 @@ const formattedPubDate = new Date(publishDate).toLocaleDateString('en-US', {
 	time {
 		display: block;
 		font-family: var(--font-mono);
+		font-size: var(--font-size-3);
+		font-weight: var(--font-weight-8);
 		text-align: end;
-		color: var(--green-4);
+		color: var(--color-primary);
 	}
 
 	li {
