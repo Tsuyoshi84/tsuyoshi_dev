@@ -1,17 +1,20 @@
-name: test-build
+name: Test
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
     branches:
       - main
 
 jobs:
   test:
-    name: Test & Build
+    name: Test
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
