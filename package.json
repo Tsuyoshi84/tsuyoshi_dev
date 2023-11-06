@@ -21,16 +21,16 @@
     "open-props": "^1.6.10"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^6.9.0",
-    "eslint": "^8.52.0",
+    "@typescript-eslint/parser": "^6.9.1",
+    "eslint": "^8.53.0",
     "eslint-plugin-astro": "^0.29.1",
-    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
     "postcss-html": "^1.5.0",
     "prettier": "^3.0.3",
     "prettier-plugin-astro": "^0.12.1",
     "stylelint": "^15.11.0",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-pretty-order": "^0.2.0",
+    "stylelint-config-pretty-order": "^0.3.0",
     "stylelint-use-logical-spec": "^5.0.0"
   }
 }
