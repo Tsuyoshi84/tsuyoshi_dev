@@ -52,6 +52,9 @@
 		--color-primary: var(--lime-4);
 		--color-secondary: var(--orange-6);
 
+		--color-primary-bg: var(--gray-9);
+		--color-secondary-bg: var(--gray-8);
+
 		--font-code: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
 			Bitstream Vera Sans Mono, Courier New, monospace;
 	}
@@ -59,7 +62,7 @@
 	html {
 		font-family: var(--font-sans);
 		color: var(--gray-0);
-		background: var(--gray-8);
+		background: var(--color-primary-bg);
 	}
 
 	body {
@@ -125,6 +128,7 @@
 
 		&:is(&:hover, &:focus-visible) {
 			text-decoration: underline;
+			text-decoration-skip-ink: all;
 		}
 	}
 }
