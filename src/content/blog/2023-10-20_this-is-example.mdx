@@ -1,0 +1,51 @@
+---
+slug: duplicated-tailwind-classes-in-vue
+title: 'How to deal with duplicated Tailwind classes in Vue'
+publishDate: '2023-12-01T12:00:00.000Z'
+description: 'When using Vue, .'
+tags: ['vue']
+---
+
+## What I've accomplished
+
+### Vue
+
+```vue
+<script setup>
+</script>
+<template>
+	<div v-if="..." class="font-sans text-3xl italic"></div>
+	<div v-if-else="..." class="font-sans text-3xl italic"></div>
+	<div v-else="..." class="font-sans text-3xl italic"></div>
+</template>
+```
+
+### Declare Tailwind class in setup
+
+```vue
+<script setup>
+const divClass = "font-sans text-3xl italic";
+</script>
+
+<template>
+	<div v-if="..." :class="divClass">...</div>
+	<div v-if-else="..." :class="divClass">...</div>
+	<div v-else="..." :class="divClass">...</div>
+</template>
+```
+
+### Create a component
+
+```vue title="astro.config.mjs"
+<script setup>
+const divClass = "font-sans text-3xl italic";
+</script>
+
+<template>
+	<ChildComponent v-if="...">...</ChildComponent>
+	<ChildComponent v-if-else="...">...</ChildComponent>
+	<ChildComponent v-else="...">...</ChildComponent>
+</template>
+```
+
+
