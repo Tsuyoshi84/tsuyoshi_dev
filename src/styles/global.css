@@ -52,6 +52,8 @@
 		--color-primary: var(--lime-4);
 		--color-secondary: var(--orange-6);
 
+		--color-primary-font: var(--gray-0);
+
 		--color-primary-bg: var(--gray-9);
 		--color-secondary-bg: var(--gray-8);
 
@@ -61,7 +63,7 @@
 
 	html {
 		font-family: var(--font-sans);
-		color: var(--gray-0);
+		color: var(--color-primary-font);
 		background: var(--color-primary-bg);
 	}
 
