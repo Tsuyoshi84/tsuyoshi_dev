@@ -10,9 +10,8 @@ tags: ['vue']
 
 ### Vue
 
-```vue
-<script setup>
-</script>
+```vue:YourFileName.vue
+<script setup></script>
 <template>
 	<div v-if="..." class="font-sans text-3xl italic"></div>
 	<div v-if-else="..." class="font-sans text-3xl italic"></div>
@@ -22,9 +21,9 @@ tags: ['vue']
 
 ### Declare Tailwind class in setup
 
-```vue
+```vue:YourFileName.vue
 <script setup>
-const divClass = "font-sans text-3xl italic";
+const divClass = 'font-sans text-3xl italic'
 </script>
 
 <template>
@@ -36,9 +35,9 @@ const divClass = "font-sans text-3xl italic";
 
 ### Create a component
 
-```vue title="astro.config.mjs"
+```vue:Component.vue
 <script setup>
-const divClass = "font-sans text-3xl italic";
+const divClass = 'font-sans text-3xl italic'
 </script>
 
 <template>
@@ -47,5 +46,3 @@ const divClass = "font-sans text-3xl italic";
 	<ChildComponent v-else="...">...</ChildComponent>
 </template>
 ```
-
-
