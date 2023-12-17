@@ -83,11 +83,11 @@
 	}
 
 	:is(p, div, span) > code {
+		padding-inline: var(--size-1);
+		border-radius: var(--size-1);
 		font-family: var(--font-code);
 		color: var(--red-5);
 		background-color: var(--gray-9);
-		border-radius: var(--size-1);
-		padding-inline: var(--size-1);
 	}
 
 	h1,
@@ -97,8 +97,8 @@
 	h5,
 	h6 {
 		letter-spacing: 0.0625em;
-		text-wrap: balance;
 		line-height: 1.3em;
+		text-wrap: balance;
 	}
 
 	h1 {
@@ -116,8 +116,8 @@
 	}
 
 	pre {
-		font-size: var(--font-size-2);
 		padding: var(--size-2);
+		font-size: var(--font-size-2);
 		tab-size: 2;
 
 		@media (768px <= width) {
@@ -126,8 +126,8 @@
 	}
 
 	a {
-		color: var(--gray-0);
 		text-decoration: none;
+		color: var(--gray-0);
 
 		&:is(&:hover, &:focus-visible) {
 			text-decoration: underline;

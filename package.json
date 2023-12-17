@@ -13,7 +13,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint --ext .js,.ts,.astro src",
+    "lint:fix": "eslint --fix --ext .js,.ts,.astro src",
     "lint-css": "stylelint \"**/*.{css,astro}\" --ignore-path .gitignore",
+    "lint-css:fix": "stylelint \"**/*.{css,astro}\" --fix --ignore-path .gitignore",
     "check": "astro check",
     "format": "prettier --write ."
   },
