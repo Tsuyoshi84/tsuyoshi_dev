@@ -8,7 +8,7 @@
 
 	"css.validate": false,
 
-	"cssvar.files": ["./node_modules/open-props/open-props.min.css", "./src/styles/global.css"],
+	"cssvar.files": ["./node_modules/open-props/open-props.min.css", "./src/styles/*.css"],
 	"cssvar.ignore": [],
 	"cssvar.extensions": ["css", "jsx", "tsx", "astro"],
 
@@ -22,6 +22,6 @@
 
 	"less.validate": false,
 	"scss.validate": false,
-	"stylelint.validate": ["html", "vue", "svelte", "astro"],
+	"stylelint.validate": ["css", "vue", "svelte", "astro"],
 	"files.autoSave": "afterDelay"
 }
