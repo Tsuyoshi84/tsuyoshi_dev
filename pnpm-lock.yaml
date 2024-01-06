@@ -34,6 +34,9 @@ devDependencies:
   eslint-plugin-jsx-a11y:
     specifier: ^6.8.0
     version: 6.8.0(eslint@8.56.0)
+  oxlint:
+    specifier: ^0.1.1
+    version: 0.1.1
   postcss-html:
     specifier: ^1.5.0
     version: 1.5.0
@@ -1035,6 +1038,54 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+
+  /@oxlint/darwin-arm64@0.1.1:
+    resolution: {integrity: sha512-QRX5lUGbxJJJqBVjt0+PzW4bLtGWH57G0ojKj5B2FzItmfU3ifZDa/6BXO2Q5hDTznVMRkNGwvoNvuyd3JQI5A==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxlint/darwin-x64@0.1.1:
+    resolution: {integrity: sha512-q8YhEiem+d9XuCDP5T+dGGtYEPbX+qxY6cMe2fIGbzWkMz/5Z0jPmjhkk7r5PrWBV18uORZmaN/G+KDL14OyPQ==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxlint/linux-arm64@0.1.1:
+    resolution: {integrity: sha512-ny3Hc4ZLaTiCx2APFXi3sXdo3CS2xab5ETgKocCEn+GC75p5hpsF3b3YhIXmlIFd7+ab44oB94hrEHpjC52wKQ==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxlint/linux-x64@0.1.1:
+    resolution: {integrity: sha512-DtRSQjRxDZk2I53mbq+6KNFIl7kxKk2hBamYn5oYL3BXU21x5Qms7GOT7pqWLD2wfDq63ItXAKgoz042CZ01/g==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxlint/win32-arm64@0.1.1:
+    resolution: {integrity: sha512-3N7vSvdbWjMkunau6dEVQFyH2iAacV6gpJ4+ekGtIKJoP+2SGiggzjWMMgGjJXdBXHctPkKwDsVkemK/xRhssQ==}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@oxlint/win32-x64@0.1.1:
+    resolution: {integrity: sha512-wFzRTZaOtoAyq6su1N7i1BSz0IexYUvQb0+08J14xvFACubbMrsWukUjlxXjpn0zgPPc0990NTJ6jBFsJRC7ZA==}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
 
   /@pkgjs/parseargs@0.11.0:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -4459,6 +4510,19 @@ packages:
       string-width: 6.1.0
       strip-ansi: 7.1.0
     dev: false
+
+  /oxlint@0.1.1:
+    resolution: {integrity: sha512-nxsuOYgsaBEN3BekSZ9nMo7NUcjQC6ySgExqhXYvJ4mFqDeey8BVvg5107J6EdnrBDBboSkSPIOUl9derfvP1Q==}
+    engines: {node: '>=14.*'}
+    hasBin: true
+    optionalDependencies:
+      '@oxlint/darwin-arm64': 0.1.1
+      '@oxlint/darwin-x64': 0.1.1
+      '@oxlint/linux-arm64': 0.1.1
+      '@oxlint/linux-x64': 0.1.1
+      '@oxlint/win32-arm64': 0.1.1
+      '@oxlint/win32-x64': 0.1.1
+    dev: true
 
   /p-limit@2.3.0:
     resolution: {integrity: sha512-//88mFWSJx8lxCzwdAABTJL2MyWB12+eIY7MDL2SqLmAkeKU9qxRvWuSyTjm3FUmpBEMuFfckAIqEaVGUDxb6w==}
