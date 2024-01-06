@@ -22,6 +22,6 @@
 
 	"less.validate": false,
 	"scss.validate": false,
-	"stylelint.validate": ["html", "vue", "svelte", "astro"],
+	"stylelint.validate": ["css", "vue", "svelte", "astro"],
 	"files.autoSave": "afterDelay"
 }
