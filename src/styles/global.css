@@ -8,6 +8,7 @@
 
 	* {
 		margin: 0;
+		padding: 0;
 	}
 
 	body {
@@ -76,6 +77,7 @@
 		font-size: var(--font-size-2);
 		letter-spacing: 0.0625em;
 		line-height: 1.5;
+		text-wrap: pretty;
 
 		@media (768px <= width) {
 			font-size: var(--font-size-3);
@@ -132,6 +134,17 @@
 		&:is(&:hover, &:focus-visible) {
 			text-decoration: underline;
 			text-decoration-skip-ink: all;
+		}
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		* {
+			animation-timing-function: var(--ease-5);
+		}
+
+		:has(:target) {
+			scroll-behavior: smooth;
+			scroll-padding-block: 2rem;
 		}
 	}
 }
