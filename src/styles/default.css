@@ -1,0 +1,100 @@
+@layer default {
+	:root {
+		--color-primary: var(--lime-4);
+		--color-secondary: var(--orange-6);
+
+		--color-primary-font: var(--gray-0);
+
+		--color-primary-bg: var(--gray-9);
+		--color-secondary-bg: var(--gray-8);
+
+		--font-code: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+			Bitstream Vera Sans Mono, Courier New, monospace;
+	}
+
+	html {
+		font-family: var(--font-sans);
+		color: var(--color-primary-font);
+		background: var(--color-primary-bg);
+	}
+
+	body {
+		padding: var(--size-4);
+		overflow-x: hidden;
+	}
+
+	p {
+		font-size: var(--font-size-2);
+		letter-spacing: 0.0625em;
+		line-height: 1.5;
+		text-wrap: pretty;
+
+		@media (768px <= width) {
+			font-size: var(--font-size-3);
+		}
+	}
+
+	:is(p, div, span) > code {
+		padding-inline: var(--size-1);
+		border-radius: var(--size-1);
+		font-family: var(--font-code);
+		color: var(--red-5);
+		background-color: var(--gray-9);
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		letter-spacing: 0.0625em;
+		line-height: 1.3em;
+		text-wrap: balance;
+	}
+
+	h1 {
+		font-size: var(--font-size-fluid-3);
+		font-weight: var(--font-weight-8);
+		text-align: center;
+	}
+
+	h2 {
+		font-size: var(--font-size-fluid-2);
+	}
+
+	h3 {
+		font-size: var(--font-size-fluid-1);
+	}
+
+	pre {
+		padding: var(--size-2);
+		font-size: var(--font-size-2);
+		tab-size: 2;
+
+		@media (768px <= width) {
+			padding: var(--size-4);
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--gray-0);
+
+		&:is(&:hover, &:focus-visible) {
+			text-decoration: underline;
+			text-decoration-skip-ink: all;
+		}
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		* {
+			animation-timing-function: var(--ease-5);
+		}
+
+		:has(:target) {
+			scroll-behavior: smooth;
+			scroll-padding-block: 2rem;
+		}
+	}
+}
