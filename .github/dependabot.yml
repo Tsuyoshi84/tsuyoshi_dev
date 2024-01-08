@@ -9,6 +9,9 @@ updates:
     directory: '/' # Location of package manifests
     schedule:
       interval: 'weekly'
+      time: '09:00'
+      timezone: 'Asia/Tokyo'
+      day: 'sunday'
     assignees:
       - 'Tsuyoshi84'
     groups:
