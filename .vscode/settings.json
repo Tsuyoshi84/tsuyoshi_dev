@@ -4,7 +4,7 @@
 	},
 
 	"cSpell.ignorePaths": ["package.json", "pnpm-lock.yaml", ".vscode/**", ".devcontainer/**"],
-	"cSpell.words": ["astro", "datetime", "stylelint", "yoshi"],
+	"cSpell.words": ["astro", "datetime", "oxlint", "stylelint", "yoshi"],
 
 	"css.validate": false,
 

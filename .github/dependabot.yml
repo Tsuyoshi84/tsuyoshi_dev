@@ -19,6 +19,7 @@ updates:
         patterns:
           - '*eslint*'
           - '*stylelint*'
+          - 'oxlint'
           - '*prettier*'
       astro:
         patterns:
