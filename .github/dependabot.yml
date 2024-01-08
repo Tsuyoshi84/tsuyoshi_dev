@@ -23,3 +23,13 @@ updates:
       astro:
         patterns:
           - '*astro*'
+
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'github_actions'
+    commit-message:
+      prefix: 'github-actions'
+    open-pull-requests-limit: 30
