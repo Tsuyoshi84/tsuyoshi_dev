@@ -33,7 +33,7 @@
     "eslint-plugin-astro": "^0.31.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "oxlint": "^0.1.2",
-    "postcss-html": "^1.5.0",
+    "postcss-html": "^1.6.0",
     "prettier": "^3.1.1",
     "prettier-plugin-astro": "^0.12.3",
     "remark-code-titles": "^0.1.2",
