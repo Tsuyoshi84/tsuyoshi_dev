@@ -21,9 +21,9 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.9",
-    "@astrojs/mdx": "^2.2.0",
-    "astro": "^4.5.5",
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/mdx": "^2.2.1",
+    "astro": "^4.5.9",
     "open-props": "^1.6.21",
     "typescript": "^5.4.3"
   },
