@@ -21,16 +21,16 @@
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@astrojs/check": "^0.5.9",
-    "@astrojs/mdx": "^2.2.0",
-    "astro": "^4.5.5",
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/mdx": "^2.2.2",
+    "astro": "^4.5.12",
     "open-props": "^1.6.21",
     "typescript": "^5.4.3"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^7.3.1",
     "eslint": "^8.57.0",
-    "eslint-plugin-astro": "^0.32.0",
+    "eslint-plugin-astro": "^0.33.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "oxlint": "^0.2.14",
     "postcss-html": "^1.6.0",
