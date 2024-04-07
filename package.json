@@ -25,7 +25,7 @@
     "@astrojs/mdx": "^2.2.2",
     "astro": "^4.5.12",
     "open-props": "^1.6.21",
-    "typescript": "^5.4.3"
+    "typescript": "^5.4.4"
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^7.4.0",
