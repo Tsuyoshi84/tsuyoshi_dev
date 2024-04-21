@@ -14,11 +14,12 @@
     "astro": "astro",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
+    "lint:biome": "biome check --apply ./src",
     "oxlint": "oxlint",
     "lint-css": "stylelint \"**/*.{css,astro}\" --ignore-path .gitignore",
     "lint-css:fix": "stylelint \"**/*.{css,astro}\" --fix --ignore-path .gitignore",
     "check": "astro check",
-    "format": "prettier --write ."
+    "format": "biome format --write src && prettier --write '**/*.css'"
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
@@ -28,11 +29,11 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.7.0",
     "@typescript-eslint/parser": "^7.7.0",
     "eslint": "^9.1.0",
     "eslint-plugin-astro": "^0.34.0",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "oxlint": "^0.2.18",
     "postcss-html": "^1.6.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
