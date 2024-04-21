@@ -1,27 +1,31 @@
 {
-	"[css]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[javascript]": {
+		"editor.defaultFormatter": "biomejs.biome"
 	},
-
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
 	"cSpell.ignorePaths": ["package.json", "pnpm-lock.yaml", ".vscode/**", ".devcontainer/**"],
 	"cSpell.words": ["astro", "datetime", "oxlint", "stylelint", "yoshi"],
-
 	"css.validate": false,
-
+	"cssvar.extensions": ["css", "jsx", "tsx", "astro"],
 	"cssvar.files": ["./node_modules/open-props/open-props.min.css", "./src/styles/*.css"],
 	"cssvar.ignore": [],
-	"cssvar.extensions": ["css", "jsx", "tsx", "astro"],
-
 	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit"
+		"source.fixAll": "explicit",
+		"source.organizeImports.biome": "explicit"
 	},
 	"editor.formatOnSave": true,
-	"editor.quickSuggestions": { "strings": "on" },
-
+	"editor.quickSuggestions": {
+		"strings": "on"
+	},
 	"eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
-
+	"files.autoSave": "afterDelay",
 	"less.validate": false,
 	"scss.validate": false,
-	"stylelint.validate": ["css", "vue", "svelte", "astro"],
-	"files.autoSave": "afterDelay"
+	"stylelint.validate": ["css", "vue", "svelte", "astro"]
 }

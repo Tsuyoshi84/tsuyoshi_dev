@@ -43,14 +43,17 @@ jobs:
       - name: Lint
         run: pnpm lint:fix
 
+      - name: Biome Lint
+        run: pnpm lint:biome
+
       - name: Lint style
         run: pnpm lint-css:fix
 
+      - name: Format
+        run: pnpm format
+
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v5
-
-      - name: oxlint
-        run: pnpm oxlint
 
       - name: Build
         run: pnpm build
