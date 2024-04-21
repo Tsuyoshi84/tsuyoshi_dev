@@ -22,8 +22,8 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.5.10",
-    "@astrojs/mdx": "^2.3.0",
-    "astro": "^4.6.1",
+    "@astrojs/mdx": "^2.3.1",
+    "astro": "^4.6.3",
     "open-props": "^1.7.2",
     "typescript": "^5.4.5"
   },
