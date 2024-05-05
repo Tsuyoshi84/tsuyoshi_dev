@@ -10,7 +10,7 @@
 		"editor.defaultFormatter": "biomejs.biome"
 	},
 	"cSpell.ignorePaths": ["package.json", "pnpm-lock.yaml", ".vscode/**", ".devcontainer/**"],
-	"cSpell.words": ["astro", "datetime", "oxlint", "stylelint", "yoshi"],
+	"cSpell.words": ["astro", "datetime", "oxlint", "shiki", "stylelint", "vitesse", "yoshi"],
 	"css.validate": false,
 	"cssvar.extensions": ["css", "jsx", "tsx", "astro"],
 	"cssvar.files": ["./node_modules/open-props/open-props.min.css", "./src/styles/*.css"],
@@ -25,6 +25,7 @@
 	},
 	"eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
 	"files.autoSave": "afterDelay",
+	"files.autoSaveWhenNoErrors": true,
 	"less.validate": false,
 	"scss.validate": false,
 	"stylelint.validate": ["css", "vue", "svelte", "astro"]
