@@ -1,9 +1,10 @@
 ---
 import { NAME } from '../constants'
+import GradientText from './GradientText.astro'
 ---
 
 <header>
-	<a class="name" href="/">{NAME}</a>
+	<a href="/"><GradientText class="name">{NAME}</GradientText></a>
 	<nav>
 		<ul>
 			<li class="link-list">
@@ -17,25 +18,19 @@ import { NAME } from '../constants'
 	header {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
 	}
-
 	.name {
 		inline-size: max-content;
 		font-size: var(--font-size-4);
 		font-weight: var(--font-weight-8);
-		background: var(--gradient-12);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-
 		@media (width >= 768px) {
 			font-size: var(--font-size-6);
 		}
 	}
-
 	.link-list {
 		list-style: none;
 	}
-
 	.link {
 		font-size: var(--font-size-4);
 		font-weight: var(--font-weight-6);

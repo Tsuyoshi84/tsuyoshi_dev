@@ -9,17 +9,25 @@ const { title, description } = Astro.props
 ---
 
 <BaseLayout title={title} description={description}>
-	<PageHeader />
-	<main>
-		<slot />
-	</main>
-	<PageFooter />
+	<div class="container">
+		<PageHeader />
+		<main>
+			<slot />
+		</main>
+		<PageFooter />
+	</div>
 </BaseLayout>
 
 <style>
+	.container {
+		display: grid;
+		min-block-size: 100dvh;
+		padding: var(--size-4);
+		grid-template-rows: auto 1fr auto;
+		align-items: center;
+	}
 	main {
-		max-inline-size: 62rem;
-		margin-inline: auto;
-		margin-block: 0;
+		container-type: block-size;
+		translate: 0 -10cqb;
 	}
 </style>
