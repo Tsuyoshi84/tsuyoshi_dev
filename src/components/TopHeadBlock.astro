@@ -1,25 +1,25 @@
 ---
 import { NAME } from '../constants'
+import GradientText from './GradientText.astro'
 ---
 
 <div class="container">
-	<div class="greet fluid fade-out">Hello,</div>
 	<h1 class="fluid"
-		><span class="im fluid fade-out">I'm</span>
-		<span class="name fluid"> {NAME}</span></h1
+		><span class="im fluid">I'm</span>
+		<GradientText class="name fluid"> {NAME}</GradientText></h1
 	>
-	<div class="role fluid fade-out">WEB DEVELOPER</div>
+	<div class="role fluid">WEB DEVELOPER</div>
 </div>
 
 <style>
 	.container {
 		display: flex;
 		container-type: inline-size;
+		inline-size: 100%;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 	}
-
 	.fluid {
 		--base-min-font-size: 3.8rem;
 		--base-max-font-size: 8rem;
@@ -30,10 +30,8 @@ import { NAME } from '../constants'
 			calc(var(--base-font-size) * var(--font-size-ratio)),
 			calc(var(--base-max-font-size) * var(--font-size-ratio))
 		);
-
 		font-size: var(--fluid-size);
 	}
-
 	h1 {
 		margin-block: var(--fluid-size);
 		font-weight: var(--font-weight-9);
@@ -46,45 +44,14 @@ import { NAME } from '../constants'
 			gap: 0.2rem;
 		}
 	}
-
 	.im {
 		--font-size-ratio: 0.8;
 	}
-
 	.name {
-		background: var(--gradient-12);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
 		--font-size-ratio: 1;
 	}
-
-	.greet {
-		font-weight: var(--font-weight-7);
-		--font-size-ratio: 0.5;
-	}
-
 	.role {
-		--font-size-ratio: 0.7;
+		--font-size-ratio: 0.6;
 		font-weight: var(--font-weight-7);
-	}
-
-	@keyframes fade-out {
-		0% {
-			opacity: 1;
-		}
-		60% {
-			opacity: 1;
-		}
-		90% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 0;
-		}
-	}
-
-	.fade-out {
-		animation: fade-out linear;
-		animation-timeline: view();
 	}
 </style>
