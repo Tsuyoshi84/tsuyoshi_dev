@@ -72,7 +72,7 @@ jobs:
         id: wait-for-checks
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          checkName: 'test'
+          checkName: 'Test'
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Merge PR
