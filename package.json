@@ -33,14 +33,14 @@
     "@typescript-eslint/parser": "^7.13.0",
     "eslint": "^9.5.0",
     "eslint-plugin-astro": "^1.2.2",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
     "postcss-html": "^1.7.0",
     "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
     "remark-code-titles": "^0.1.2",
     "stylelint": "^16.6.1",
     "stylelint-config-html": "^1.1.0",
-    "stylelint-config-pretty-order": "^0.5.1",
+    "stylelint-config-pretty-order": "^0.6.0",
     "stylelint-use-logical-spec": "^5.0.1"
   }
 }
