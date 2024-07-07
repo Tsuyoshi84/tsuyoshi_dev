@@ -15,8 +15,8 @@ dependencies:
     specifier: ^4.11.5
     version: 4.11.5(typescript@5.5.2)
   open-props:
-    specifier: ^1.7.4
-    version: 1.7.4
+    specifier: ^1.7.5
+    version: 1.7.5
   typescript:
     specifier: ^5.5.2
     version: 5.5.2
@@ -4484,8 +4484,8 @@ packages:
       mimic-fn: 4.0.0
     dev: false
 
-  /open-props@1.7.4:
-    resolution: {integrity: sha512-LfzWOJq4I79GxtpT1/CucxujndqWjAdcC2H6gSJo1TmFGzyGv1VJWJQ1BQnui0/YgTNI+AaG1pEcq5/DCGL8RQ==}
+  /open-props@1.7.5:
+    resolution: {integrity: sha512-DajjLQDJgIa0i+QdB2q5M8lNLo2ICk+DbDh4TsqNsT1tAO8Zm8F7dndSkLMQkobT98lbvDMMpJWO8NT0ibjrjA==}
     dev: false
 
   /optionator@0.9.4:
