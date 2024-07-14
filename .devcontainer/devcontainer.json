@@ -29,5 +29,6 @@
 	},
 	"features": {
 		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {}
-	}
+	},
+	"forwardPorts": [4321]
 }
