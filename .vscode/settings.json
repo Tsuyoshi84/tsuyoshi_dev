@@ -28,5 +28,7 @@
 	"files.autoSaveWhenNoErrors": true,
 	"less.validate": false,
 	"scss.validate": false,
-	"stylelint.validate": ["css", "vue", "svelte", "astro"]
+	"stylelint.validate": ["css", "vue", "svelte", "astro"],
+	"workbench.colorTheme": "Monokai",
+	
 }

@@ -14,7 +14,7 @@
     "astro": "astro",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
-    "lint:biome": "biome check --apply ./src",
+    "lint:biome": "biome check --write ./src",
     "oxlint": "oxlint",
     "lint-css": "stylelint \"**/*.{css,astro}\" --ignore-path .gitignore",
     "lint-css:fix": "stylelint \"**/*.{css,astro}\" --fix --ignore-path .gitignore",
