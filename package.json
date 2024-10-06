@@ -22,9 +22,9 @@
     "format": "biome format --write src && prettier --write '**/*.css'"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
+    "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^3.1.7",
-    "astro": "^4.15.9",
+    "astro": "^4.15.11",
     "open-props": "^1.7.6",
     "typescript": "^5.6.2"
   },
