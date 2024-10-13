@@ -19,7 +19,7 @@
     "lint-css": "stylelint \"**/*.{css,astro}\" --ignore-path .gitignore",
     "lint-css:fix": "stylelint \"**/*.{css,astro}\" --fix --ignore-path .gitignore",
     "check": "astro check",
-    "format": "biome format --write src && prettier --write '**/*.css'"
+    "format": "biome format --write src"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
