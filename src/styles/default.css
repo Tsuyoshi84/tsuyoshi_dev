@@ -8,8 +8,8 @@
 		--color-primary-bg: var(--gray-9);
 		--color-secondary-bg: var(--gray-8);
 
-		--font-code: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
+		--font-code: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera
+			Sans Mono, Courier New, monospace;
 	}
 
 	html {
