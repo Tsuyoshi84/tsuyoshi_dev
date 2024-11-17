@@ -1,5 +1,4 @@
 {
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"[javascript]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
@@ -19,6 +18,7 @@
 		"source.fixAll": "explicit",
 		"source.organizeImports.biome": "explicit"
 	},
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.formatOnSave": true,
 	"editor.quickSuggestions": {
 		"strings": "on"
@@ -26,9 +26,20 @@
 	"eslint.validate": ["javascript", "javascriptreact", "astro", "typescript", "typescriptreact"],
 	"files.autoSave": "afterDelay",
 	"files.autoSaveWhenNoErrors": true,
+	"github.copilot.chat.codeGeneration.useInstructionFiles": true,
+	"github.copilot.chat.testGeneration.instructions": [
+		{
+			"text": "Use Vitest for testing"
+		},
+		{
+			"text": "Vitest API are globally available, so You don't have to import it, expect, describe, etc."
+		},
+		{
+			"text": "Use Testing Library for Vue component testing"
+		}
+	],
 	"less.validate": false,
 	"scss.validate": false,
 	"stylelint.validate": ["css", "vue", "svelte", "astro"],
-	"workbench.colorTheme": "Monokai",
-	
+	"workbench.colorTheme": "Monokai"
 }
