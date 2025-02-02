@@ -18,8 +18,8 @@ importers:
         specifier: ^5.1.9
         version: 5.1.9(jiti@2.4.2)(rollup@4.32.0)(typescript@5.7.3)(yaml@2.6.0)
       open-props:
-        specifier: ^1.7.10
-        version: 1.7.10
+        specifier: ^1.7.12
+        version: 1.7.12
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -2083,8 +2083,8 @@ packages:
   oniguruma-to-es@2.3.0:
     resolution: {integrity: sha512-bwALDxriqfKGfUufKGGepCzu9x7nJQuoRoAFp4AnwehhC2crqrDIAP/uN2qdlsAvSMpeRC3+Yzhqc7hLmle5+g==}
 
-  open-props@1.7.10:
-    resolution: {integrity: sha512-zZPJlr39YbHPou7mQ9GUKz1jiYjWzyZf/0pkPZq4MrtwgZ6FSCnf7hLkvFRGq+RZZ327vGSW3HPc7QMH4FUAZg==}
+  open-props@1.7.12:
+    resolution: {integrity: sha512-HoC1hxNifxehfcsX+L2c+JmF/dD+uhWADNFPYhskcnwNBzboyUZXeD72JpVrFmxYWXl7Li3u5XfHFzpoQ+VKCQ==}
 
   optionator@0.9.4:
     resolution: {integrity: sha512-6IpQ7mKUxRcZNLIObR0hz7lxsapSSIYNZJwXPGeF0mTVqGKFIXj1DQcMoT22S3ROcLyY/rz0PWaWZ9ayWmad9g==}
@@ -5559,7 +5559,7 @@ snapshots:
       regex: 5.1.1
       regex-recursion: 5.1.1
 
-  open-props@1.7.10: {}
+  open-props@1.7.12: {}
 
   optionator@0.9.4:
     dependencies:
