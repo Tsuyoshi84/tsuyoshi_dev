@@ -13,10 +13,10 @@ importers:
         version: 0.9.4(prettier-plugin-astro@0.14.1)(prettier@3.5.3)(typescript@5.8.3)
       '@astrojs/mdx':
         specifier: ^4.2.6
-        version: 4.2.6(astro@5.7.12(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0))
+        version: 4.2.6(astro@5.7.13(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0))
       astro:
-        specifier: ^5.7.12
-        version: 5.7.12(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0)
+        specifier: ^5.7.13
+        version: 5.7.13(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0)
       open-props:
         specifier: ^1.7.15
         version: 1.7.15
@@ -913,8 +913,8 @@ packages:
     resolution: {integrity: sha512-F6NW1RJo5pp2kPnnM97M5Ohw8zAGjv83MpxHqfAochH68n/kiXN57+hYaNUCA7XkScoVNr6yzvly3hsY34TGfQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.7.12:
-    resolution: {integrity: sha512-UQOItiZz2hcv9PlHTQ6dNqFDIVNPnmwk6eyAjJqPE9O8EDHZK2JKtTRD0CBFN2Uqr0RE0TWP2gqDpLfsa5dJEA==}
+  astro@5.7.13:
+    resolution: {integrity: sha512-cRGq2llKOhV3XMcYwQpfBIUcssN6HEK5CRbcMxAfd9OcFhvWE7KUy50zLioAZVVl3AqgUTJoNTlmZfD2eG0G1w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1161,6 +1161,15 @@ packages:
 
   debug@4.4.0:
     resolution: {integrity: sha512-6WTZ/IxCY/T6BALoZHaE4ctp9xm+Z5kY/pzYaCHRFeyVhojxlrm+46y68HA6hr0TcwEssoxNiDEUJQjfPZ/RYA==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
+  debug@4.4.1:
+    resolution: {integrity: sha512-KcKCqiftBJcZr++7ykoDIEwSa3XWowTfNPo92BYxjXiyYEVrUQh2aLyhxBCwww+heortUFxEJYcRzosstTEBYQ==}
     engines: {node: '>=6.0'}
     peerDependencies:
       supports-color: '*'
@@ -2627,8 +2636,8 @@ packages:
   sass-formatter@0.7.9:
     resolution: {integrity: sha512-CWZ8XiSim+fJVG0cFLStwDvft1VI7uvXdCNJYXhDvowiv+DsbD1nXLiQ4zrE5UBvj5DWZJ93cwN0NX5PMsr1Pw==}
 
-  semver@7.7.1:
-    resolution: {integrity: sha512-hlq8tAfn0m/61p4BVRcPzIGr6LKiMwo4VM6dGi6pt4qcRkmNzTcWq6eCEjEh+qXjkMDvPlOFFSGwQjoEa6gyMA==}
+  semver@7.7.2:
+    resolution: {integrity: sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -3392,12 +3401,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.2.6(astro@5.7.12(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0))':
+  '@astrojs/mdx@4.2.6(astro@5.7.13(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.1
       '@mdx-js/mdx': 3.1.0(acorn@8.14.1)
       acorn: 8.14.1
-      astro: 5.7.12(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0)
+      astro: 5.7.13(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -3418,7 +3427,7 @@ snapshots:
   '@astrojs/telemetry@3.2.1':
     dependencies:
       ci-info: 4.2.0
-      debug: 4.4.0
+      debug: 4.4.1
       dlv: 1.1.3
       dset: 3.1.4
       is-docker: 3.0.0
@@ -3991,7 +4000,7 @@ snapshots:
       fast-glob: 3.3.3
       is-glob: 4.0.3
       minimatch: 9.0.5
-      semver: 7.7.1
+      semver: 7.7.2
       ts-api-utils: 2.1.0(typescript@5.8.3)
       typescript: 5.8.3
     transitivePeerDependencies:
@@ -4158,19 +4167,19 @@ snapshots:
       '@typescript-eslint/types': 8.14.0
       '@typescript-eslint/typescript-estree': 8.32.0(typescript@5.8.3)
       astrojs-compiler-sync: 1.0.1(@astrojs/compiler@2.12.0)
-      debug: 4.4.0
+      debug: 4.4.1
       entities: 4.5.0
       eslint-scope: 8.3.0
       eslint-visitor-keys: 4.2.0
       espree: 10.3.0
       globby: 11.1.0
       is-glob: 4.0.3
-      semver: 7.7.1
+      semver: 7.7.2
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  astro@5.7.12(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0):
+  astro@5.7.13(@types/node@22.15.17)(jiti@2.4.2)(rollup@4.40.2)(typescript@5.8.3)(yaml@2.6.0):
     dependencies:
       '@astrojs/compiler': 2.12.0
       '@astrojs/internal-helpers': 0.6.1
@@ -4188,7 +4197,7 @@ snapshots:
       common-ancestor-path: 1.0.1
       cookie: 1.0.2
       cssesc: 3.0.0
-      debug: 4.4.0
+      debug: 4.4.1
       deterministic-object-hash: 2.0.2
       devalue: 5.1.1
       diff: 5.2.0
@@ -4214,7 +4223,7 @@ snapshots:
       picomatch: 4.0.2
       prompts: 2.4.2
       rehype: 13.0.2
-      semver: 7.7.1
+      semver: 7.7.2
       shiki: 3.4.0
       tinyexec: 0.3.2
       tinyglobby: 0.2.13
@@ -4514,6 +4523,10 @@ snapshots:
     dependencies:
       ms: 2.1.3
 
+  debug@4.4.1:
+    dependencies:
+      ms: 2.1.3
+
   decode-named-character-reference@1.1.0:
     dependencies:
       character-entities: 2.0.2
@@ -4750,7 +4763,7 @@ snapshots:
   eslint-compat-utils@0.6.0(eslint@9.26.0(jiti@2.4.2)):
     dependencies:
       eslint: 9.26.0(jiti@2.4.2)
-      semver: 7.7.1
+      semver: 7.7.2
 
   eslint-plugin-astro@1.3.1(eslint@9.26.0(jiti@2.4.2))(typescript@5.8.3):
     dependencies:
@@ -5970,7 +5983,7 @@ snapshots:
   micromark@4.0.2:
     dependencies:
       '@types/debug': 4.1.12
-      debug: 4.4.0
+      debug: 4.4.1
       decode-named-character-reference: 1.1.0
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.3
@@ -6521,7 +6534,7 @@ snapshots:
     dependencies:
       suf-log: 2.5.3
 
-  semver@7.7.1: {}
+  semver@7.7.2: {}
 
   send@1.2.0:
     dependencies:
@@ -6570,7 +6583,7 @@ snapshots:
     dependencies:
       color: 4.2.3
       detect-libc: 2.0.4
-      semver: 7.7.1
+      semver: 7.7.2
     optionalDependencies:
       '@img/sharp-darwin-arm64': 0.33.5
       '@img/sharp-darwin-x64': 0.33.5
@@ -6903,7 +6916,7 @@ snapshots:
 
   typescript-auto-import-cache@0.3.5:
     dependencies:
-      semver: 7.7.1
+      semver: 7.7.2
 
   typescript@5.8.3: {}
 
@@ -7098,7 +7111,7 @@ snapshots:
   volar-service-typescript@0.0.62(@volar/language-service@2.4.10):
     dependencies:
       path-browserify: 1.0.1
-      semver: 7.7.1
+      semver: 7.7.2
       typescript-auto-import-cache: 0.3.5
       vscode-languageserver-textdocument: 1.0.12
       vscode-nls: 5.2.0
