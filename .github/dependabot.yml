@@ -12,6 +12,8 @@ updates:
       time: '09:00'
       timezone: 'Asia/Tokyo'
       day: 'sunday'
+    commit-message:
+      prefix: 'chore'
     assignees:
       - 'Tsuyoshi84'
     groups:
@@ -28,9 +30,9 @@ updates:
   - package-ecosystem: 'github-actions'
     directory: '/'
     schedule:
-      interval: 'weekly'
+      interval: 'monthly'
     labels:
       - 'github_actions'
     commit-message:
-      prefix: 'github-actions'
+      prefix: 'chore'
     open-pull-requests-limit: 30
