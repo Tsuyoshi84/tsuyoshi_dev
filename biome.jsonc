@@ -8,10 +8,28 @@
 		"lineEnding": "lf",
 		"lineWidth": 100,
 		"attributePosition": "auto",
-		"ignore": ["**/package.json", "**/pnpm-lock.yaml", "**/dist"],
+		"ignore": ["**/package.json", "**/pnpm-lock.yaml", "**/dist"]
 	},
 	"organizeImports": { "enabled": true },
-	"linter": { "enabled": true, "rules": { "recommended": true } },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"correctness": {
+				"useImportExtensions": {
+					"level": "error",
+					"options": {
+						"suggestedExtensions": {
+							"ts": {
+								"module": "ts",
+								"component": "vue"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
 	"javascript": {
 		"formatter": {
 			"jsxQuoteStyle": "double",
@@ -22,7 +40,7 @@
 			"bracketSpacing": true,
 			"bracketSameLine": false,
 			"quoteStyle": "single",
-			"attributePosition": "auto",
-		},
-	},
+			"attributePosition": "auto"
+		}
+	}
 }
