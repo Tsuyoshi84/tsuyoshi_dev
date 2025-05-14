@@ -46,5 +46,6 @@
 	"scss.validate": false,
 	"stylelint.validate": ["css", "vue", "svelte", "astro"],
 	"typescript.preferences.importModuleSpecifierEnding": "js",
+	"typescript.tsdk": "node_modules/typescript/lib",
 	"workbench.colorTheme": "Monokai"
 }
