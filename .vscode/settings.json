@@ -5,6 +5,9 @@
 	"[json]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
 	"[typescript]": {
 		"editor.defaultFormatter": "biomejs.biome"
 	},
@@ -38,8 +41,10 @@
 			"text": "Use Testing Library for Vue component testing"
 		}
 	],
+	"javascript.preferences.importModuleSpecifierEnding": "js",
 	"less.validate": false,
 	"scss.validate": false,
 	"stylelint.validate": ["css", "vue", "svelte", "astro"],
+	"typescript.preferences.importModuleSpecifierEnding": "js",
 	"workbench.colorTheme": "Monokai"
 }
