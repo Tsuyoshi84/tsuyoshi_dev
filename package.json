@@ -25,7 +25,7 @@
     "@astrojs/check": "^0.9.4",
     "@astrojs/mdx": "^4.3.0",
     "astro": "^5.7.13",
-    "open-props": "^1.7.15",
+    "open-props": "^1.7.16",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
