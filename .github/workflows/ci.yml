@@ -32,20 +32,17 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Run Check
-        run: pnpm check
+      - name: Astro Check
+        run: pnpm astro:check
 
       - name: Lint
         run: pnpm lint:fix
 
-      - name: Biome Lint
-        run: pnpm lint:biome
+      - name: Biome Check
+        run: pnpm biome:check
 
       - name: Lint style
         run: pnpm lint-css:fix
-
-      - name: Format
-        run: pnpm format
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v6

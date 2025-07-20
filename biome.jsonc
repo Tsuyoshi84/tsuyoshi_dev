@@ -1,5 +1,8 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"includes": ["*.{ts,js,cjs,mjs,json,jsonc}", "src/**/*.*"]
+	},
 	"formatter": {
 		"enabled": true,
 		"formatWithErrors": false,
@@ -7,10 +10,9 @@
 		"indentWidth": 2,
 		"lineEnding": "lf",
 		"lineWidth": 100,
-		"attributePosition": "auto",
-		"ignore": ["**/package.json", "**/pnpm-lock.yaml", "**/dist"]
+		"attributePosition": "auto"
 	},
-	"organizeImports": { "enabled": true },
+	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -19,12 +21,7 @@
 				"useImportExtensions": {
 					"level": "error",
 					"options": {
-						"suggestedExtensions": {
-							"ts": {
-								"module": "ts",
-								"component": "vue"
-							}
-						}
+						"forceJsExtensions": true
 					}
 				}
 			}
@@ -42,5 +39,19 @@
 			"quoteStyle": "single",
 			"attributePosition": "auto"
 		}
-	}
+	},
+	"overrides": [
+		{
+			"includes": ["**/*.svelte", "**/*.astro", "**/*.vue"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"noUnusedVariables": "off",
+						"noUnusedImports": "off"
+					},
+					"style": { "useConst": "off", "useImportType": "off" }
+				}
+			}
+		}
+	]
 }
