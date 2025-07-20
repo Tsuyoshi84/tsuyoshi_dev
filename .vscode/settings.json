@@ -18,7 +18,9 @@
 	"cssvar.files": ["./node_modules/open-props/open-props.min.css", "./src/styles/*.css"],
 	"cssvar.ignore": [],
 	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit",
+		"source.fixAll.biome": "explicit",
+		"source.fixAll.eslint": "never",
+		"source.organizeImports": "never",
 		"source.organizeImports.biome": "explicit"
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
