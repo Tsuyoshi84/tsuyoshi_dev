@@ -22,9 +22,9 @@
 		"format": "biome format --write ."
 	},
 	"dependencies": {
-		"@astrojs/check": "^0.9.4",
-		"@astrojs/mdx": "^4.3.0",
-		"astro": "^5.15.9",
+		"@astrojs/check": "^0.9.8",
+		"@astrojs/mdx": "^5.0.2",
+		"astro": "^6.0.8",
 		"open-props": "^1.7.15",
 		"typescript": "^5.9.3"
 	},
