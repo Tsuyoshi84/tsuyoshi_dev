@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.16",
-		"@typescript-eslint/parser": "^8.62.1",
+		"@typescript-eslint/parser": "^8.63.0",
 		"eslint": "^10.0.3",
 		"eslint-plugin-astro": "^2.1.1",
 		"eslint-plugin-jsx-a11y": "^6.10.0",
