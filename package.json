@@ -30,16 +30,16 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.4.16",
-		"@typescript-eslint/parser": "^8.65.0",
+		"@typescript-eslint/parser": "^8.70.0",
 		"eslint": "^10.0.3",
 		"eslint-plugin-astro": "^3.0.1",
 		"eslint-plugin-jsx-a11y": "^6.10.0",
 		"postcss-html": "^1.8.0",
 		"prettier": "^3.5.3",
-		"prettier-plugin-astro": "^0.14.1",
+		"prettier-plugin-astro": "^1.0.0",
 		"remark-code-titles": "^0.1.2",
 		"stylelint": "^17.0.0",
-		"stylelint-config-html": "^1.1.0",
+		"stylelint-config-html": "^2.0.0",
 		"stylelint-config-pretty-order": "^0.7.0",
 		"stylelint-use-logical-spec": "^5.0.1"
 	}
