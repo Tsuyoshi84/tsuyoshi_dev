@@ -7,6 +7,13 @@ https://tsuyoshi.dev
 
 ## Development
 
+Install the project tools with [mise](https://mise.jdx.dev/):
+
+```sh
+mise trust
+mise install
+```
+
 Install dependencies:
 
 ```sh
