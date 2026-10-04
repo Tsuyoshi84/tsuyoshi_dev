@@ -1,8 +1,9 @@
 import { defineCollection } from 'astro:content'
-import { blogSchema } from '../schemas.ts'
+import { glob } from 'astro/loaders'
+import { blogSchema } from './schemas.ts'
 
 const blogCollection = defineCollection({
-	type: 'content',
+	loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
 	schema: blogSchema,
 })
 
