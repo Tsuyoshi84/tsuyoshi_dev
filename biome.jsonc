@@ -1,5 +1,10 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
 	"files": {
 		"includes": ["*.{ts,js,cjs,mjs,json,jsonc}", "src/**/*.*"]
 	},
@@ -16,7 +21,20 @@
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"preset": "recommended",
+			"nursery": {
+				"noAstroConflictingSetDirectives": "error",
+				"noAstroSetHtmlDirective": "warn",
+				"useAstroClientOnlyDirectiveValue": "error",
+				"noFloatingPromises": "warn",
+				"noMisusedPromises": "warn"
+			},
+			"suspicious": {
+				"noConsole": {
+					"level": "warn",
+					"options": { "allow": ["warn", "error"] }
+				}
+			}
 		}
 	},
 	"javascript": {
@@ -32,18 +50,8 @@
 			"attributePosition": "auto"
 		}
 	},
-	"overrides": [
-		{
-			"includes": ["**/*.svelte", "**/*.astro", "**/*.vue"],
-			"linter": {
-				"rules": {
-					"correctness": {
-						"noUnusedVariables": "off",
-						"noUnusedImports": "off"
-					},
-					"style": { "useConst": "off", "useImportType": "off" }
-				}
-			}
-		}
-	]
+	"html": {
+		"experimentalFullSupportEnabled": true,
+		"formatter": { "enabled": false }
+	}
 }
