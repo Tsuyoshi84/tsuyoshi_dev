@@ -211,7 +211,7 @@ importers:
         version: 5.9.3
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.4.16
+        specifier: ^2.5.15
         version: 2.5.15
       '@typescript-eslint/parser':
         specifier: ^8.71.0
