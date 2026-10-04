@@ -1,4 +1,4 @@
-import { z } from 'astro:content'
+import { z } from 'astro/zod'
 
 const blogTagSchema = z.enum(['astro', 'vue'])
 
@@ -8,7 +8,7 @@ export const blogSchema = z.object({
 	/** Blog description */
 	description: z.string().optional(),
 	/** Published date */
-	publishDate: z.string().datetime(),
+	publishDate: z.iso.datetime(),
 	/** Tags */
 	tags: blogTagSchema.array(),
 })
