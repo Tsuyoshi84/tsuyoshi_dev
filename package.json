@@ -25,7 +25,7 @@
 		"@astrojs/check": "^0.9.12",
 		"@astrojs/markdown-remark": "^7.3.5",
 		"@astrojs/mdx": "^8.1.2",
-		"astro": "^7.4.5",
+		"astro": "^7.4.7",
 		"open-props": "^1.7.15",
 		"typescript": "^6.0.3"
 	},
