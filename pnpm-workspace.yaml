@@ -3,6 +3,12 @@ saveTypes: true
 verifyDepsBeforeRun: error
 minimumReleaseAge: 1440
 
+# Pin emnapi 1.11 so autoDedupe cannot pair @astrojs/astro2tsx's core@1.11
+# with @emnapi/runtime@2.0 beta from rolldown (breaks `astro check`).
+overrides:
+  '@emnapi/core': 1.11.3
+  '@emnapi/runtime': 1.11.3
+
 allowBuilds:
   esbuild: false
   sharp: false
